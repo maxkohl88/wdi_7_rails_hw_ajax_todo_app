@@ -1,10 +1,13 @@
 class ToDosController < ApplicationController
   before_action :set_to_do, only: [:show, :edit, :update, :destroy]
 
+  respond_to :json
+
   # GET /to_dos
   # GET /to_dos.json
   def index
     @to_dos = ToDo.all
+    respond_with(@to_dos)
   end
 
   # GET /to_dos/1
@@ -26,14 +29,10 @@ class ToDosController < ApplicationController
   def create
     @to_do = ToDo.new(to_do_params)
 
-    respond_to do |format|
-      if @to_do.save
-        format.html { redirect_to @to_do, notice: 'To do was successfully created.' }
-        format.json { render :show, status: :created, location: @to_do }
-      else
-        format.html { render :new }
-        format.json { render json: @to_do.errors, status: :unprocessable_entity }
-      end
+    if @to_do.save
+      respond_with(@to_do)
+    else
+      respond_with(@to_do.errors)
     end
   end
 
@@ -69,6 +68,6 @@ class ToDosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def to_do_params
-      params.require(:to_do).permit(:body, :active)
+      params.require(:to_do).permit(:body, :complete)
     end
 end

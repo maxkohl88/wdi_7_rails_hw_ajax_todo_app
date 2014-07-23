@@ -2,10 +2,10 @@ var toDoApp = toDoApp || {};
 
 // ToDoItem constructor function
 
-toDoApp.ToDo = function(body){
+toDoApp.ToDo = function(id, body, complete){
   this.id = id;
   this.body = body;
-  this.active = active || true;
+  this.complete = complete || false;
 };
 
 // method to generate HTML for each ToDoItem

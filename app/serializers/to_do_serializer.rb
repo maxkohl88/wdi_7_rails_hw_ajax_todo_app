@@ -1,3 +1,3 @@
 class ToDoSerializer < ActiveModel::Serializer
-  attributes :id, :body, :active
+  attributes :id, :body, :complete
 end
