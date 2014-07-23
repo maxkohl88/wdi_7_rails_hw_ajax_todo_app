@@ -1,0 +1,21 @@
+%h1 Listing to_dos
+
+%table
+  %tr
+    %th Body
+    %th Active
+    %th
+    %th
+    %th
+
+  - @to_dos.each do |to_do|
+    %tr
+      %td= to_do.body
+      %td= to_do.active
+      %td= link_to 'Show', to_do
+      %td= link_to 'Edit', edit_to_do_path(to_do)
+      %td= link_to 'Destroy', to_do, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New To do', new_to_do_path

@@ -1,0 +1,16 @@
+= form_for @to_do do |f|
+  - if @to_do.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@to_do.errors.count, "error")} prohibited this to_do from being saved:"
+      %ul
+        - @to_do.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :body
+    = f.text_area :body
+  .field
+    = f.label :active
+    = f.check_box :active
+  .actions
+    = f.submit 'Save'
