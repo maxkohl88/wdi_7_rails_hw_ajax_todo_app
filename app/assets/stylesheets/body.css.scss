@@ -1,0 +1,112 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+#list-container {
+  height: 600px;
+  width: 910px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.half {
+  height: 600px;
+  width: 450px;
+  padding: 8px;
+  background-image: linear-gradient(rgb(50, 152, 172), white);
+  -webkit-border-radius: 15px 15px 75px 75px;
+  -moz-border-radius: 15px 15px 75px 75px;
+  border-radius: 15px 15px 75px 75px;
+}
+
+#to-do-container {
+}
+
+
+.list-header {
+  height: 45px;
+  width: 430px;
+  margin: 0 auto;
+  padding: 9px;
+  background-color: white;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.list-title {
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+#to-do-list {
+  margin-top: 5px;
+  list-style-type: none;
+}
+
+.to-do-item {
+  height: 60px;
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 9px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+  padding: 14px;
+}
+
+#new-item-form {
+  margin-top: -10px;
+}
+
+#new-item-field {
+  height: 60px;
+  width: 430px;
+  margin: 0 auto;
+  padding: 9px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.to-do-item.complete {
+  background-color: rgba(214, 92, 92, 0.98);
+}
+
+#completed-list {
+  margin-top: 5px;
+  list-style-type: none;
+}
+
+.hover-complete {
+  background-color: rgba(30, 204, 99, 0.97);
+  color: white;
+}
+
+// .hover-span {
+//   background-color: white;
+//   color: black;
+// }
+
+.delete-button {
+  height: 30px;
+  width: 70px;
+  float: right;
+  text-align: center;
+  background-color: rgba(191, 197, 202, 0.52);  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
