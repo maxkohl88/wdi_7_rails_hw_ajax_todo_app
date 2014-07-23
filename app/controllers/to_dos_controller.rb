@@ -3,6 +3,10 @@ class ToDosController < ApplicationController
 
   respond_to :json
 
+  def default_serializer_options
+    {root: false}
+  end
+
   # GET /to_dos
   # GET /to_dos.json
   def index

@@ -35,7 +35,8 @@ toDoApp.ToDoCollection = {
       url: 'http://localhost:3000/to_dos',
       data: requestObj,
       dataType: 'json'
-    });
+    })
+    .done(this.getToDos.bind(this));
   },
 
   getToDos: function(){
@@ -57,8 +58,7 @@ toDoApp.ToDoCollection = {
     for(var i = 0; i < todos.length; i++){
       // 10. create an instance of toDo, then pass it an id and body
       newToDo = new toDoApp.ToDo(todos[i].id, todos[i].body);
-      toDoHTML += newToDo.buildHTML();
-      debugger;
+      toDosHTML += newToDo.buildHTML();
     }
 
     // 10. empty the toDosList
