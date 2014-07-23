@@ -21,3 +21,6 @@ gem 'active_model_serializers'
 
 # Add Handlebars template support
 gem 'handlebars_assets'
+
+# add haml support
+gem 'haml-rails'

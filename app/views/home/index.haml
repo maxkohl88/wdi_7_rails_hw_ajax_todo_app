@@ -1,0 +1,18 @@
+#row.header
+  #main-title
+    %h1 Why does this to-do list keep asking for my credit card info?
+#row.main-content
+  #list-container
+    #to-do-container.half.large-6.columns
+      #row.list-header
+        %span.list-title To-Do
+      #row.item-container
+        %ol#to-do-list
+        %form#new-item-form
+          %input#new-item-field{placeholder: "Add a new to-do...", type: 'text'} 
+    #completed-container.half.large-6.columns
+      #row.list-header
+        %span.list-title Completed
+      #row.item-container
+        %ol#completed-list
+          
