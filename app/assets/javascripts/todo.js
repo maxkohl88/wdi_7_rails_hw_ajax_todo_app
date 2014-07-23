@@ -5,6 +5,7 @@ var toDoApp = toDoApp || {};
 toDoApp.ToDo = function(body){
   this.id = id;
   this.body = body;
+  this.active = active || true;
 };
 
 // method to generate HTML for each ToDoItem

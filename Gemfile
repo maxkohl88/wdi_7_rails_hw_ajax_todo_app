@@ -16,7 +16,7 @@ gem 'spring', group: :development
 gem 'js-routes'
 
 # Use either one of these, but please not both
-gem 'jbuilder', '~> 2.0'
+# gem 'jbuilder', '~> 2.0'
 gem 'active_model_serializers'
 
 # Add Handlebars template support
